@@ -1,0 +1,22 @@
+#bubble sort
+
+n=int(input("Enter number of students="))
+list1=[]
+for i in range(n):
+  x=float(input("enter percentage="))
+  list1.append(x)
+print(list1)
+
+#bubble sort
+for i in range(n-1):
+  for j in range(n-1-i):
+
+    if(list1[j] > list1[j+1]):
+      temp=list1[j]
+      list1[j]=list1[j+1]
+      list1[j+1]=temp
+print(list1)
+
+for i in range(5):
+  print(list1[i])
+  i=i+1
